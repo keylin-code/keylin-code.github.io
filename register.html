@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册 - 乐声漫游</title>
+    <link rel="icon" type="image/png" href="../images/音乐小图标1.png">
+    <link rel="stylesheet" type="text/css" href="../CSS/register.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">主页</a></li>
+                <li><a href="playlists.html">歌单列表</a></li>
+                <li><a href="playlist_detail.html">歌单详情</a></li>
+                <li><a href="album.html">专辑</a></li>
+                <li><a href="singer.html">歌手信息</a></li>
+                <li><a href="play.html">播放</a></li>
+                <li><a href="search.html">搜索</a></li>
+                <li><a href="login.html">登入|注册</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="register">
+            <h2>注册</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="email">邮箱：</label>
+                    <input type="email" id="email" name="email" required placeholder="请输入有效的邮箱">
+                </div>
+                <div class="form-group">
+                    <label for="phone">手机号：</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="请输入手机号">
+                </div>
+                <div class="form-group">
+                    <label for="password">密码：</label>
+                    <input type="password" id="password" name="password" required minlength="6" placeholder="至少6个字符">
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">确认密码：</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="确认密码">
+                </div>
+                <div class="form-group">
+                    <label>性别：</label>
+                    <label for="male"><input type="radio" id="male" name="gender" value="male" required> 男</label>
+                    <label for="female"><input type="radio" id="female" name="gender" value="female" required> 女</label>
+                </div>
+                <div class="form-group">
+                    <label>兴趣：</label>
+                    <label for="music"><input type="checkbox" id="music" name="hobby" value="music"> 音乐</label>
+                    <label for="sports"><input type="checkbox" id="sports" name="hobby" value="sports"> 体育</label>
+                    <label for="travel"><input type="checkbox" id="travel" name="hobby" value="travel"> 旅游</label>
+                </div>
+                <div class="form-group">
+                    <label for="region">所属地区：</label>
+                    <select id="region" name="region" required>
+                        <option value="">请选择</option>
+                        <option value="beijing">北京</option>
+                        <option value="shanghai">上海</option>
+                        <option value="guangzhou">广州</option>
+                        <option value="shenzhen">深圳</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="intro">个人简介：</label>
+                    <textarea id="intro" name="intro" rows="4" placeholder="简单介绍自己" required></textarea>
+                </div>
+                <button type="submit">注册</button>
+                <div class="additional-content">
+                    <p>已有账户？ <a href="login.html">去登录</a></p>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 乐声漫游</p>
+    </footer>
+    <script src="../JS/register.js"></script>
+</body>
+
+</html>
